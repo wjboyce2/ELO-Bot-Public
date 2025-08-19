@@ -4,6 +4,9 @@ import math
 import os
 import json
 from datetime import datetime, timezone, timedelta
+import certifi
+from discrod.ext import commands
+os.environ["SSL_CERT_FILE"] = certifi.where()
 
 BOT_TOKEN = " "                                                #ELO Bot token 
 CHANNEL_ID =                                                   #Your discord channel ID
